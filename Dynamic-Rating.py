@@ -19,5 +19,10 @@ def normalize(input):
 ratings = [2,1,3,3,1,3,3,3,2,2,1,1,2,3,1]
 ratings_test = [2,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1]
 result = normalize(convert(ratings_test))
-for key, value in result.items():
-    print(f"{key}: {value}")
+#for key, value in result.items():
+#    print(f"{key}: {value}")
+
+import csv
+
+# extract csv file, make it general mapping by doing x/(high - low), do rankings with adjusted imdb and metacritic
+# , best averaged, and most ranks diff between the two rankings. 
